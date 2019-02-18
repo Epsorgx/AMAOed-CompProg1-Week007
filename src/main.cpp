@@ -1,7 +1,9 @@
 /* ****************************************************************
- * @author: <your name here>
- * @app name: <your application name here>
- * @app desc: <describe the purpose of your application here>
+ * @author: <Mark Gerone F. Grospe>
+ * @app name: <Computer painter>
+ * @app desc: <Using WHILE statement, the computer displays a right triangle using asterisks
+ *             where the height is at the left corner of the application.
+ *             The height will depend on the user input.>
  * @history:
  *  - <yyyy/mm/dd> | <name>
  *      -- <description>
@@ -33,8 +35,30 @@ int main() {
     // Place your code logic after this comment line
     // ***********************************************************
 
-    cout << "Hello World!";
+    int user_input, i, t;
 
+    i = 0;
+    cout << "This program will draw a triangle for you!\n";
+    cout << "Please enter a number: ";
+    cin >> user_input;
+    cout << "\n";
+    cout << "-------------------------------\n\n";
+
+    while (i < user_input){
+        t = 0;
+        while (t <= i) {
+            cout << "*";
+            t += 1;
+        }
+        cout<< endl;
+        i++;
+    };
+
+    cout << "\n";
+    cout << "-------------------------------\n\n";
+    cout << "What a nice right triagle.\n\n";
+
+    cin.ignore();
     // ********************** DO NOT CHANGE **********************
     // Print a new line and ask user for any key before exiting
     // ***********************************************************
