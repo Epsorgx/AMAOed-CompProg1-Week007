@@ -37,21 +37,19 @@ int main() {
 
     int user_input, i, t;
 
-    i = 0;
+    
     cout << "This program will draw a triangle for you!\n";
     cout << "Please enter a number: ";
     cin >> user_input;
     cout << "\n";
     cout << "-------------------------------\n\n";
 
-    while (i < user_input){
-        t = 0;
-        while (t <= i) {
+    for (i = 0; i < user_input; i++){
+        for (t = 0; t <= i; t++) {
             cout << "*";
-            t += 1;
         }
         cout<< endl;
-        i++;
+    
     };
 
     cout << "\n";
