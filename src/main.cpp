@@ -1,9 +1,9 @@
 /* ****************************************************************
  * @author: <Mark Gerone F. Grospe>
  * @app name: <Computer painter>
- * @app desc: <FOR statement that displays a right triangle using asterisks
- *             where the height is at the right corner of the application.
- *             The height will depend on the user input..>
+ * @app desc: <DO WHILE statement that displays an inverted equilateral triangle using asterisks.
+ *             No asterisk should be adjacent to one another.
+ *             The height will depend on the user input>
  * @history:
  *  - <yyyy/mm/dd> | <name>
  *      -- <description>
@@ -39,20 +39,20 @@ int main() {
 
     
     cout << "This program will draw a triangle for you!\n";
-    cout << "Please enter the height of triagle: ";
+    cout << "Please enter a number: ";
     cin >> user_input;
     cout << "\n";
     cout << "-------------------------------\n\n";
 
     for (i = 0; i < user_input; i++){
-        for (j = user_input-1; j >= i; j--){
+        for (j = 1; j <= i; j++){
             cout << " ";
         }
-            for (t = 0; t <= i; t++) {
+            for (t = user_input; t >= 2 * i; t--) {
                 cout << "*";
+                
             }
-        cout<< endl;
-    
+    cout << "\n";
     };
 
     cout << "\n";
