@@ -1,9 +1,9 @@
 /* ****************************************************************
  * @author: <Mark Gerone F. Grospe>
  * @app name: <Computer painter>
- * @app desc: <Using WHILE statement, the computer displays a right triangle using asterisks
- *             where the height is at the left corner of the application.
- *             The height will depend on the user input.>
+ * @app desc: <FOR statement that displays a right triangle using asterisks
+ *             where the height is at the right corner of the application.
+ *             The height will depend on the user input..>
  * @history:
  *  - <yyyy/mm/dd> | <name>
  *      -- <description>
