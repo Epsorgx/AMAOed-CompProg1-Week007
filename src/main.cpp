@@ -35,19 +35,22 @@ int main() {
     // Place your code logic after this comment line
     // ***********************************************************
 
-    int user_input, i, t;
+    int user_input, i, j, t;
 
     
     cout << "This program will draw a triangle for you!\n";
-    cout << "Please enter a number: ";
+    cout << "Please enter the height of triagle: ";
     cin >> user_input;
     cout << "\n";
     cout << "-------------------------------\n\n";
 
     for (i = 0; i < user_input; i++){
-        for (t = 0; t <= i; t++) {
-            cout << "*";
+        for (j = user_input-1; j >= i; j--){
+            cout << " ";
         }
+            for (t = 0; t <= i; t++) {
+                cout << "*";
+            }
         cout<< endl;
     
     };
