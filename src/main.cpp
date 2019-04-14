@@ -44,20 +44,23 @@ int main() {
     cout << "\n";
     cout << "-------------------------------\n\n";
 
-    for (i = 0; i < user_input; i++){
+    i = 0;
+
+    do {
         for (j = 1; j <= i; j++){
             cout << " ";
         }
             for (t = user_input; t >= 2 * i; t--) {
                 cout << "*";
                 
-            }
-    cout << "\n";
-    };
+            };
+         cout << "\n";
+    i++;
+    } while (i < user_input) ;
 
     cout << "\n";
     cout << "-------------------------------\n\n";
-    cout << "What a nice right triagle.\n\n";
+    cout << "What a nice inverted triagle.\n\n";
 
     cin.ignore();
     // ********************** DO NOT CHANGE **********************
